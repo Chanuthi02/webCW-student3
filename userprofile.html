@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile</title>
+  <link rel="stylesheet" href="userprofile.css">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header class="header">
+		<a href="home.html" class="logo" >
+			<img src="logo.jpg" alt="logo">
+		</a>
+		
+		<nav class="navbar">
+			<a href="index.html" class="active">Home</a>
+			<a href="userprofile.html">User Prfile</a>
+			<a href="mproduct.html">Shop</a>
+			<a href="gallery.html">Gallery</a>
+			<a href="Quiz.html">Quiz</a>
+			<a href="sitemap.html">Sitemap</a>
+			<a href="studentdetails.html">About US</a>
+		</nav>
+		
+	</header>
+  <div class="container">
+    <h1>User Profile Setup</h1>
+    <div class="progress-bar">
+      <div class="progress" style="width: 33.33%"></div>
+    </div>
+    <div class="step">
+      <h2>Step 1: Personal Details</h2>
+      <div class="prompt">Enter your name:</div>
+      <input type="text" placeholder="Name">
+	  <div class="prompt">Enter your age:</div>
+      <input type="text" placeholder="Age">
+      <div class="prompt">Enter your email:</div>
+      <input type="email" placeholder="Email">
+	  <div class="prompt">Select your country:</div>
+      <select>
+        <option value="sl">SriLanka</option>
+        <option value="fra">France</option>
+		<option value="rus">Russia</option>
+        <option value="spa">Spain</option>
+      </select>
+	  
+      <!-- More prompts for personal details -->
+      <button class="next-btn">Next</button>
+    </div>
+    <div class="step">
+      <h2>Step 2: Preferences</h2>
+      <div class="prompt">Select your favorite color:</div>
+      <input type="color">
+      <div class="prompt">Choose your preferred language:</div>
+      <select>
+        <option value="en">English</option>
+        <option value="fr">French</option>
+		<option value="ru">Russian</option>
+        <option value="sp">Spanish</option>
+      </select>
+      <!-- More prompts for preferences -->
+      <button class="prev-btn">Previous</button>
+      <button class="next-btn">Next</button>
+    </div>
+    <div class="step">
+      <h2>Step 3: Interests</h2>
+      <div class="prompt">Select your  knowledge level regarding climate change and sustainable development</div>
+      <input type="checkbox" id="interest1">
+      <label for="interest1">1. 1-5</label>
+      <input type="checkbox" id="interest2">
+      <label for="interest2">2. 5-10</label>
+      <!-- More prompts for interests -->
+      <button class="prev-btn">Previous</button>
+      <button class="submit-btn">Submit</button>
+    </div>
+  </div>
+
+  <script src="userprofile.js"></script>
+</body>
+</html>
